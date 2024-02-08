@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>Restaurante Bar - Novo mundo </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- cabecalho -->
+    <header class="navbar navbar-expand-lg sticky-top pt-4 pb-4" id="cabecalho">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo/logo.site-p.jpg" alt="logotipo do restaurante">
+                </a>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold"><a href="#sobre-o-restaurante" class="nav-link">Sobre o restaurante</a></li>
+                    <li class="nav-item fw-bold"><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                    <li class="nav-item fw-bold"><a href="https://web.whatsapp.com/" target="_blank" class="nav-link  btn-contato">Contato</a></li>
+                    <li class="nav-item fw-bold"><a href="#" class="nav-link">Localização</a></li>
+                    <li class="nav-item fw-bold"><a href="#" class="nav-link" >Reserva</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth="true">
+        
+        <section id="sobre-o-restaurante">
+            <!-- slide carousel -->
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner img-fluid">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="img/slide/slide1.jpg" alt="restaurante" class="d-block w-100">
+    
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/slide/slide2.jpg" alt="imagem comida brasileira" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/slide/slide3.jpg" alt="restaurante" class="d-block w-100 img-fluid">
+                    </div>
+                </div>
+                <!-- botoes de next e prev -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-ico"></span>
+                </button>
+                <button class="carousel-control-next" type="button"  data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-prev-next"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+    
+                </div>
+            </div>
+    
+            <!-- nova  div sobre -->
+            <div class="pt-5 pb-5 about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="img/slide/restaurante.jpg" alt="foto do restaurante" class="d-block w-100 rounded">
+                        </div>
+    
+                        <div class="col-md-7 mt-3 mt-md-0 text-center">
+                            <h2 >Conheça o restaurante</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, maiores iste sint iure doloremque commodi deleniti aliquam harum lorem</p>
+                            <!-- cpa -->
+                            <button type="button" class="btn btn-primary btn-lg fs-4 text-center botao btn-contato">FAÇA SEU PEDIDO AGORA</button>
+    
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sessao cardapio -->
+
+        <section id="cardapio">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center p-5">Nosso Cardápio</h2>
+                </div>
+                <!-- barra lateral -->
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column">
+                            <button type="button"  data-bs-toggle="tab" data-bs-target="#pratos" class="fw-bold text-start nav-link active">Pratos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas"  class="fw-bold text-start nav-link">Bebidas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremsas"  class="fw-bold text-start nav-link">Sobremesas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#drinks"  class="fw-bold text-start nav-link">Drinks</button>
+
+                        </nav>
+                    </aside>
+                    <!-- sessao cardapio -->
+                    <div class="col-md-10" >
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="pratos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/pratos/pizza.jpg" alt="pizza">
+                                        <h5 class="fw-bold mt-2">Pizza</h5>
+                                        <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/pratos/entrada.jpg" alt="salmao">
+                                        <h5 class="fw-bold mt-2">Salmão</h5>
+                                        <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/pratos/macarronada.jpg" alt="macarronada">
+                                        <h5 class="fw-bold mt-2">Macarrão</h5>
+                                        <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- sessao bebidas cardapio -->
+                            <div class="tab-pane" id="bebidas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/bebidas/coca-cola.jpg" alt="coca-cola">
+                                        <h5 class="fw-bold mt-2">Refrigerantes</h5>
+                                        <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/bebidas/suco.jpg" alt="sucos">
+                                        <h5 class="fw-bold mt-2">Sucos</h5>
+                                        <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/bebidas/cerveja.jpg" alt="cervejas">
+                                        <h5 class="fw-bold mt-2">Cervejas</h5>
+                                        <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/bebidas/vinho.jpg" alt="vinho">
+                                        <h5 class="fw-bold mt-2">Vinho</h5>
+                                        <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- sessao cardapio sobremesas -->
+                            <div class="tab-pane" id="sobremsas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/sobremesas/bolo.jpg" alt="bolo">
+                                        <h5 class="fw-bold mt-2">Bolo</h5>
+                                        <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/sobremesas/cupcake.jpg" alt="cupcake">
+                                        <h5 class="fw-bold mt-2">CupCake</h5>
+                                        <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/sobremesas/mousse.jpg" alt="mousse">
+                                        <h5 class="fw-bold mt-2">Mouse</h5>
+                                        <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="img/sobremesas/torta-alema.jpg" alt="torta-alema">
+                                        <h5 class="fw-bold mt-2">Torta Alema</h5>
+                                        <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                                  <!-- sessao cardapio drinks -->
+                                  <div class="tab-pane" id="drinks">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="img/bebidas/drinks.jpg" alt="drinks">
+                                            <h5 class="fw-bold mt-2">Saquerinha</h5>
+                                            <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="img/bebidas/margarita.webp" alt="sucos">
+                                            <h5 class="fw-bold mt-2">Marguerita</h5>
+                                            <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="img/bebidas/cerveja.jpg" alt="cervejas">
+                                            <h5 class="fw-bold mt-2">Cervejas</h5>
+                                            <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </div>
+    
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="img/bebidas/vinho.jpg" alt="vinho">
+                                            <h5 class="fw-bold mt-2">Vinho</h5>
+                                            <p>Lipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+            
+            </div>
+        </section>
+</div>
+<footer id="rodape" class="text-white text-center py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Menu</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#cabecalho">Sobre o restaurante</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Localização</a></li>
+                </ul>
+        </div>
+        <div class="col-md-4">
+            <h5>Redes Sociais</h5>
+            <ul class="list-inline">
+                <li class="d-inline-block"><a href="#"><i class="bi bi-facebook mr-2 "></i> </a></li>
+                <li class="d-inline-block"><a href="#"><i class="bi bi-instagram ms-3 me-3 "></i> </a></li>
+                <li class="d-inline-block"><a href="#"><i class="bi bi-twitter"></i> </a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h5>Contato</h5>
+            <p>br-101 - Imbituba</p>
+            <p>Email: contato@novomundo.com</p>
+            <p>Telefone: (48) 1234-8127</p>
+        </div>
+        </div>
+    </div>
+</footer>
+<div class="row mt-12 rodape-text">
+    <div class="col text-start  ms-4 pt-3">
+        <p>&copy; 2024 - Restaurante NOVO MUNDO</p>
+    </div>
+    <div class="col  text-end  fw-bold me-4 pt-3">
+        <p >Site Desenvolvido por <a href="https://github.com/jessica-pires" target="_blank"></a>Jéssica-Pires</p>
+    </div>
+</div>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    </script>
+</body>
+</html>

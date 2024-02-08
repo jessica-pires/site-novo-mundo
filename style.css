@@ -1,0 +1,111 @@
+
+
+:root{
+    --cor-blue:#2F58CD;
+    --cor-primary:#092635;
+    --color-secundary:#fff;
+    --font-secundary:'Pacifico', cursive;
+    --font-family:'Oswald', sans-serif;
+    --color-background: #ffeae6;
+
+}
+
+.body{
+    font-family:var(--font-family) ;
+}
+.navbar{
+    background-color: var(--cor-primary);
+}
+
+.navbar-brand img{
+    height: 50px;
+    width: 150px;
+}
+
+.nav .nav-link.active{
+    background-color: var(--color-secundary);
+    color:  var(--cor-primary);
+}
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover{
+    color:var(--color-secundary);
+}
+
+
+.navbar-toggler{
+    background-color: var(--color-secundary);
+    color: var(--cor-primary);
+
+}
+
+section{
+    background-color: var(--cor-primary);
+    color: var(--color-secundary);
+}
+h2{
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Protest Riot', sans-serif; */
+    font-family: var(--font-secundary);
+}
+
+#cardapio h2{
+    border-top: 1px solid var(--color-secundary);
+    
+}
+
+.botao{
+    background-color: red;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: var(--font-family);
+    
+
+}
+
+#rodape{
+    background-color: var(--color-secundary);
+    
+}
+#rodape h5{
+    font-weight: bold;
+    color: var(--cor-primary);
+    font-family: var(--font-secundary);
+    font-size: 1.5em;
+
+}
+
+#rodape ul li a,
+#rodape  p{
+    text-decoration: none;
+    color: var(--cor-primary);
+
+}
+
+#rodape  p{
+    font-weight:bold ;
+}
+.bi{
+    font-size: 2em;
+    color: var(--cor-primary);
+}
+
+.rodape-text{
+    background-color: var(--color-background);
+    color: var(--cor-primary);
+    
+}
+
+
+/* celular */
+
+
+@media (max-width:767px) {
+    .carousel-item img{
+        height: 280px;
+    }
+
+    
+
+
+}  
